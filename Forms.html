@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <nav>
+            <a href="UdemyPage.html">Home</a>
+        </nav>
+        <h1>Forms Demo</h1>
+        <form action="/gotopage">
+            <p>
+                <label for="username">Username</label>
+                <input type="text" placeholder="Enter your name" id="username" name="username">
+            </p>
+            <input type="button">
+            <p>
+                <label for="pass">Password enter</label>
+                <input type="password" placeholder="Enter your password" id="pass" name="password">
+            </p>
+            <input type="number" placeholder="Enter a number" name="num">
+            <input type="color">
+            <input type="checkbox">
+            <input type="date">
+
+
+            <p>
+                <button>Submit</button>
+                by default submit button in form
+            </p>
+            <p>
+                <button type="button">button</button>
+            </p>
+        </form>
+
+        <hr>
+
+        <h2>Hijacking search</h2>
+        <h3>Google search</h3>
+        <form action="https://www.google.com/search">
+            <input type="text" placeholder="Search on google" name="q">
+            <button>Search google</button>
+        </form>
+
+        <h3>Youtube search</h3>
+        <form action="https://www.youtube.com/results">
+            <input type="text" placeholder="Search on youtube" name="search_query">
+            <button>Search youtube</button>
+        </form>
+        <hr>
+        <h2>checkbox / Radio button / Dropdown / Range / Textarea</h2>
+        <form action="/birds">
+            <h3>Checkbox</h3>
+            <input type="checkbox" name="everthingYes" id="everthing">
+            <label for="everthing">I like everthing</label>
+            <p>
+            <h3>Animal</h3>
+            <input type="radio" name="Animal" id="c" value="Cat">
+            <label for="c">Cat</label> <br>
+
+            <input type="radio" name="Animal" id="d" value="Dog">
+            <label for="d">Dog</label><br>
+
+            <input type="radio" name="Animal" id="f" value="Fish">
+            <label for="f">Fish</label><br>
+            </p>
+            <p>
+                <label for="food">Please select meal</label>
+                <select name="meal" id="food">
+                    <option value="none">Select One</option>
+                    <option value="fish">Fish</option>
+                    <option value="veg">veg</option>
+                    <option value="rice">Rice</option>
+                </select>
+
+            </p>
+            <p>
+                <label for="range">Cheese</label>
+                <input type="range" name="cheese_level" id="range" min="20" max="50" value="30">
+            </p>
+
+            <p>
+                <label for="area">Any suggestions?</label>
+                <br>
+                <textarea name="suggestions" id="area" cols="30" rows="10" placeholder="Enter here"></textarea>
+            </p>
+
+            <button>button Submit</button>
+
+        </form>
+        <hr>
+
+        <form action="dummy">
+            <h2>Validation Forms</h2>
+            <label for="username">Username</label>
+            <input type="text" name="user" id="username" required minlength="7" maxlength="20">
+
+            <label for="email">Email</label>
+            <input type="email" name="emailAddress" id="email" required>
+
+
+            <button>Submit</button>
+        </form>
+    </main>
+</body>
+
+</html>
