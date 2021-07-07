@@ -1,0 +1,75 @@
+/* Universal Selector */
+* { 
+    background-color: #80ffdb;
+}
+
+/* Selector by elements */
+button {
+    font-size: 30px;
+    color: black;
+}
+
+/* selector by multiple elements, selector list */
+h1, h2 {
+    color: blueviolet;
+}
+
+/* ID selector */
+#signup {
+    background-color: chocolate;
+}
+
+/* Class selector */
+.tag {
+    background-color: red;
+}
+
+/* Decendant selector: select all "span" that are nested inside ".post" class */
+.post a{
+    background-color: seagreen;
+    color: tan;
+}
+
+/* Adjacent selector: at same level but after one element */
+h2 + button{
+    font-style: italic;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Direct child : select direct children of the element  */
+footer > a {
+    color:palevioletred;
+}
+
+/* attribute selector */
+input[type="text"] {
+    color:rgb(12, 143, 51); 
+}
+
+
+/* Pseudo class */
+button:hover{
+    background-color: black;
+    color: burlywood;
+}
+
+button:active {
+    background-color:darkred;
+    color: darkcyan;
+}
+
+.post:nth-of-type(2n){
+    background-color: dimgray;
+}
+
+h2::first-letter{
+    font-size: 50px;
+}
+
+p::first-line{
+    color: forestgreen;
+}
+
+p::selection{
+    background-color: black;
+}

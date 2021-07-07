@@ -1,0 +1,55 @@
+section{
+    width: 140px;
+    height: 140px;
+    background-color: red;
+}
+#trans {
+    width: 70%;
+    height: 70%;
+    background-color: rgba(237, 243, 237, 0.8);
+}
+#opac {
+    width: 70%;
+    height: 70%;
+    background-color: rgb(237, 243, 237);
+    opacity: .5;
+}
+
+div{
+    background-color: lime;
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    margin: 1em;
+    display: inline-block;
+}
+
+#middle {
+    background-color: yellow;
+}
+
+#static #middle{
+    position: static;
+    top: 100px; 
+    /* static won't change anything */
+}
+#relative #middle{
+    position: relative;
+    top: 60px;
+    left: 50px;
+    /* relative can change the position relative to it's real position */
+}
+
+#absolute #middle{
+    position: absolute;
+    top: 60px;
+    left: 50px;
+    /* relative can change the position relative to it's real position */
+}
+
+#fixed #middle{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    /* relative can change the position relative to it's real position */
+}
